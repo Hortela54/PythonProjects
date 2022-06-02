@@ -7,8 +7,8 @@ cont = 1
 navegador = webdriver.Chrome()
 navegador.set_window_size(1000,1000) #tamanho da tela
 navegador.get('https://intelbras.umov.me/CenterWeb/#__main__') #url site
-navegador.find_element_by_xpath('//*[@id="username"]').send_keys("samuel.silva@intelbras.com.br") #login
-navegador.find_element_by_xpath('//*[@id="password"]').send_keys("S!A@055861") #senha
+navegador.find_element_by_xpath('//*[@id="username"]').send_keys("") #login
+navegador.find_element_by_xpath('//*[@id="password"]').send_keys("") #senha
 navegador.find_element_by_xpath('//*[@id="submit_button"]').click() #botão entrar
 time.sleep(3)
 pyautogui.click(x=905, y=160) #engrenagem
